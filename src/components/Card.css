@@ -1,0 +1,43 @@
+.card {
+    height: 400px;
+    width: 400px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+
+    background-color: rgb(28, 48, 48);
+    color: white;
+
+    border-radius: 10px;
+
+    margin: .5rem 1rem;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.card img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 300px;
+}
+
+.card .price {
+    color: rgb(255, 14, 14);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: .2rem 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.card .title {
+    padding: .2rem 1rem;
+    font-size: 1.5rem;
+}
+
+.card .description {
+    padding: .2rem 1rem;
+    color: rgb(171, 171, 171);
+}
+
+.price .title .description {}
