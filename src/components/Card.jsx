@@ -1,4 +1,4 @@
-import "./card.css"
+import "./Card.css"
 
 function Card({item}) {
 // console.log({item});
