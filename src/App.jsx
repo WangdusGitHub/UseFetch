@@ -1,4 +1,4 @@
-import UseFetch from './Hooks/UseFetch'
+import useFetch from './Hooks/useFetch'
 import './App.css'
 import Card from './components/card';
 import { useEffect } from 'react';
@@ -6,11 +6,11 @@ import { useEffect } from 'react';
 const url = "https://api.escuelajs.co/api/v1/products";
 
 function App() {
-  const {data, isLoading, error} = UseFetch(url);
+  const {data, isLoading, error} = useFetch(url);
 
-  useEffect(() => {
-    console.log(data)
-  }, [data])
+  // useEffect(() => {
+  //   console.log(data)
+  // }, [data]);
 
   // const res = {
   //   id:11, 
@@ -24,14 +24,17 @@ function App() {
     <header>
       <h1>Photos</h1>
     </header>
+    <hr /><br />
     <section className="cards">
       {isLoading && <p>loading...</p>}
-    {error && <p>error... {error.message || 'Something went wrong'}</p>}
-    {!isLoading && !error && data &&
-      data.map(item => (
-        <Card key={item.id} item={item} />
-      ))
-    }
+
+      {error && <p>error... {error}</p>}
+
+      {!isLoading && !error && data &&
+        data.map(item => (
+          <Card key={item.id} item={item} />
+        ))
+      }
     </section>
     
     </>

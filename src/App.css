@@ -12,3 +12,9 @@ header {
     flex-wrap:wrap;
     justify-content: space-around;
 }
+
+hr {
+    width: 90%;
+    margin: auto;
+    opacity: .3;
+}

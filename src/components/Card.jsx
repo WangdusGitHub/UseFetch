@@ -15,7 +15,7 @@ function Card({item}) {
             <div id={id} className="card">
                 <img src={images[0]} alt="img" />
                 <h3 className="title">{title}</h3>
-                <p className="price">{price}</p>
+                <p className="price">₹{price}</p>
                 <p className="description">{description}</p>
             </div>
         </>
