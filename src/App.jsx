@@ -1,6 +1,6 @@
 import useFetch from './Hooks/useFetch'
 import './App.css'
-import Card from './components/card';
+import Card from './components/Card';
 import { useEffect } from 'react';
 
 const url = "https://api.escuelajs.co/api/v1/products";
