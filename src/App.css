@@ -6,11 +6,14 @@ header {
 }
 .cards {
     height: 100%;
-    width: 100%;
+    width: 98%;
+    margin: auto;
 
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    place-items: center;
 }
 
 hr {
