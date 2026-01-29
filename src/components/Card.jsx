@@ -1,12 +1,10 @@
 import "./Card.css"
 
 function Card({item}) {
-// console.log({item});
 
     const id = item.id;
     const title = item.title.length > 10 ? item.title.slice(0, 10) + "..." : item.title;
     const description = item.description.length > 40 ? item.description.slice(0,40) + "..." : item.description;
-    // const price = item.price;
     const images = item.images;
 
     const getPrice = (price) => {
@@ -22,7 +20,6 @@ function Card({item}) {
 
     const price = getPrice(item.price);
 
-    // console.log({item})
     return (
         <>
             <div id={id} className="card">
